@@ -104,7 +104,7 @@ header {
     font-weight: bold;
     width: 31.2%;
 }
-.tips-btn:active{
+.tips-btn:focus{
     background-color: hsl(172, 67%, 45%);
     color: #00474B;
 }
@@ -115,7 +115,7 @@ header {
     
 }
 
-#custom:hover{
+#custom:focus{
     outline: 2px solid hsl(172, 67%, 45%);
 }
 
@@ -175,24 +175,28 @@ div > h5 {
 }
 
 @media(max-width: 600px) {
+    body {
+        height: 130vh;
+    }
     #wrapper {
         display: block;
  
     }
     #tips {
-   
         grid-gap: 10px;
         
     }
     #right {
-        padding: 0;
-        margin: 0;
+        margin-left: 0;
     }
     .tips-btn {
         width: 48%;
     }
     .left-side{
         margin: 0 0 20px;
+    }
+    #reset-btn {
+        padding: 10px;
     }
 }
 
